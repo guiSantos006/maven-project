@@ -3,14 +3,13 @@ package br.com.gui;
 import br.com.gui.dto.UserDTO;
 import br.com.gui.mapper.UserMapper;
 import br.com.gui.model.UserModel;
-import org.mapstruct.Mapper;
 import org.mapstruct.factory.Mappers;
 
 import java.time.LocalDate;
 
 public class Main {
 
-    private static UserMapper mapper = Mappers.getMapper(UserMapper.class);
+    private static final UserMapper mapper = Mappers.getMapper(UserMapper.class);
 
     static void main() {
 
